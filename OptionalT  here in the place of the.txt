@@ -1,0 +1,31 @@
+Optional<T>  here in the place of the T I use the Entity object and then this Optional class helps in not getting the nullpointer expection as if the any data is not present in the db then the java not gives the null pointer expection that,s why we use this in the interface of repository which exteds the another interface names as the JpaRepository
+
+
+what is the Construction Dependency Injection ?? what is this ?
+instead to specifying the dependencies means what type of service I need in the class itself we do the Constructor Dependency Injection . it make the class loosly coupled and we can change the service provider if need without chaging the class inside of it 
+
+in the code it been shown like :
+
+w/o Constructor Dependency Injection					w Constructor Dependency Injection
+class OrderProcessor{							class OrderProcessor{
+	OrderProcessor(){						private final EmailService emailService;
+		EmailService EmailService = new smtpEmailService;	OrderProcessor( EmailService emailService){
+	}									this.emailService = emailService;
+										}
+}									}
+
+
+p s v  m(S[] a){							p s v  m(S[] a){
+OrderProcessor op = new OrderProcessor(); 				OrderProcessor op = new OrderProcessor(smptEmailService); 
+}									}
+
+
+https://vickybytes.com/blog/dependency-injection-explained
+
+
+// for the loging rest api endpoint I used the Post methord instead of the get because while doing the get request to the sever in the urt the get hhtp methord cause the generation of the url like this - /login?username=radha123&password=password123 this cause the major issue of the security as this can save in the browser history .
+that's why ew use the post methord here
+
+@Configuation is the annotation used on the class which consist @Beans of the spring . this is basically use to inject the dependency to the service . rather than just repeatively creating the simple and small classes this type of the configuration helps in the systematic way to hold them(beans) in the same class which consist all the Beans in @Configuration class..
+@Beans make the oject of the methords in the @Configuraton class . 
+so in the simple words I can say that the {@Beans convert the @configuaration class methods to the object(This is the main correction! The method itself does not become an object. Spring calls the @Bean method, and the object returned by that method is registered as a Spring bean.)} which is managed by the springboot

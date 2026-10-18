@@ -1,0 +1,8 @@
+what it did till now ??
+respful api 
+register endpoint for the registration
+login EndPoint for the login
+
+ 
+adding the Bcrypt to the password (spring-security-crypto)
+Input validation (reject all the invalid inputs)
