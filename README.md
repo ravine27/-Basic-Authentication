@@ -134,19 +134,19 @@ public class AppConfig {
 
 ## 9. Quick revision table
 
-| Concept | Remember it as |
-|---|---|
-| REST API | Communication between frontend and backend |
-| Controller | Receives HTTP requests |
-| Service | Contains business logic |
-| Repository | Works with the database |
-| `encode()` | Hashes the raw password |
-| `matches()` | Verifies the entered password |
-| `Optional<User>` | User result may be present or absent |
-| Constructor DI | Required dependency comes through the constructor |
-| `@Configuration` | Defines Spring bean configuration |
-| `@Bean` | Registers the returned object as a Spring bean |
-| Validation | Rejects input that breaks defined rules |
+| Concept                          | Remember it as |
+|----------------------------------|---|
+| REST API                         | Communication between frontend and backend |
+| Controller                       | Receives HTTP requests |
+| Service                          | Contains business logic |
+| Repository                       | Works with the database |
+| `encode()`                       | Hashes the raw password |
+| `matches()`                      | Verifies the entered password |
+| `Optional<User>`                 | User result may be present or absent |
+| Constructor Dependency Injection | Required dependency comes through the constructor |
+| `@Configuration`                 | Defines Spring bean configuration |
+| `@Bean`                          | Registers the returned object as a Spring bean |
+| Validation                       | Rejects input that breaks defined rules |
 
 ## 10. What should I learn next?
 
